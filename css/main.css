@@ -1,0 +1,83 @@
+/*Base Styles*/
+
+html {
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+.description { padding: 2em 0 5em; }
+
+.description p {
+  margin: 1em auto;
+  width: 55%;
+  text-align: center;
+}
+
+.mujeres-ux-logo {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.mas-mujeres-social {
+  max-width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: space-between;
+}
+
+.social {
+  width: calc(100% / 6);
+  text-align: center;
+  text-decoration: none;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.social:hover .social-icon svg { fill: #ff937e; }
+.social:hover .social-name { color: #ff937e;N}
+
+.social-name {
+  color: #434343;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 5px;
+  transition: 200ms ease-in;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 39.9375em) {
+  .mas-mujeres-social {
+    max-width: 95%;
+    justify-content: center;
+  }
+
+  .description p {
+    width: 85%;
+  }
+
+  .social {
+    margin: 1em 0;
+    width: 50%;
+  }
+
+  .mujeres-ux-logo {
+    margin: 3em auto 0;
+    width: 80%;
+  }
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
